@@ -32,7 +32,7 @@ module Interswitch
     #   options: (Hash)
     def initialize(args)
       # # ensure args is hash and required values are supplied
-      @testurl = 'https://stageserv.interswitchng.com/test_paydirect/pay'
+      @testurl = 'https://sandbox.interswitchng.com/webpay/pay'
       @liveurl = 'https://webpay.interswitchng.com/paydirect/pay'
       args.each do |k,v|
         instance_variable_set("@#{k}", v) unless v.nil?

@@ -2,7 +2,7 @@ module Interswitch
   class Form
     include Interswitch::Helpers
 
-    attr_reader :product_id, :pay_item_id, :amount_kobo, :site_redirect_url, :currency, :cust_id, :cust_name, :txn_ref, :testurl, :liveurl, :mackey, :url, :hash, :site_name, :transaction_date, :package_name, :interswitch_redirect_path
+    attr_reader :product_id, :pay_item_id, :amount_kobo, :site_redirect_url, :currency, :cust_id, :cust_name, :txn_ref, :testurl, :liveurl, :mackey, :url, :hash, :site_name, :transaction_date, :package_name, :interswitch_redirect_path, :interswitch_logo
 
     # Initialize the token!
     #
@@ -57,8 +57,7 @@ module Interswitch
         <tr height='30px'>
             <td align='left' width='50%'>Payment Partner:</td>
             <td align='left' width='50%' style='font-weight:bold'>
-            <!-- Interswitch -->
-            <img src='http://www.interswitchng.com/images/logo.gif' width='200' height='50' alt='payment partner' />
+            <img src='#{interswitch_logo}' width='200' height='50' alt='payment partner' />
             </td>
         </tr>        
         <tr height='30px'>

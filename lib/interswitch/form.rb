@@ -57,7 +57,7 @@ module Interswitch
         <tr height='30px'>
             <td align='left' width='50%'>Payment Partner:</td>
             <td align='left' width='50%' style='font-weight:bold'>
-            <img src='#{interswitch_logo}' width='200' height='50' alt='payment partner' />
+            <img src='#{self.interswitch_logo}' width='200' height='50' alt='payment partner' />
             </td>
         </tr>        
         <tr height='30px'>

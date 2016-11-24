@@ -2,7 +2,7 @@ module Interswitch
   class Form
     include Interswitch::Helpers
 
-    attr_reader :product_id, :pay_item_id, :amount_kobo, :site_redirect_url, :currency, :cust_id, :cust_name, :txn_ref, :testurl, :liveurl, :mackey, :url, :hash, :site_name, :transaction_date, :package_name
+    attr_reader :product_id, :pay_item_id, :amount_kobo, :site_redirect_url, :currency, :cust_id, :cust_name, :txn_ref, :testurl, :liveurl, :mackey, :url, :hash, :site_name, :transaction_date, :package_name, :interswitch_redirect_path
 
     # Initialize the token!
     #

@@ -87,7 +87,7 @@ module Interswitch
 
           <tr height='30px'>
               <td align='right' width='100%' colspan='2'>
-              <a href='/' class='btn btn-ipnx btn-sm'>&nbsp;Cancel&nbsp;</a>
+              <a href='#{interswitch_redirect_path}' class='btn btn-ipnx btn-sm'>&nbsp;Cancel&nbsp;</a>
                   &nbsp;&nbsp;&nbsp;
               <button type='submit' name='commit' class='btn btn-ipnx btn-sm'>Submit</button>
               </td>
@@ -95,6 +95,7 @@ module Interswitch
        </table>
       </form>
       "
+
       # <script type='text/javascript'>
       #   document.getElementById('webpay-payment-form').submit()
       # </script>

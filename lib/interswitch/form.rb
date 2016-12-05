@@ -70,7 +70,6 @@ module Interswitch
           <td align='left' width='50%' style='font-weight:bold'> &#8358;#{self.amount_kobo/100}</td>
         </tr>
 
-
         <input name='utf8' type='hidden' value='&#x2713;' />
         <input type='hidden' name='product_id' id='product_id' value='#{self.product_id}' />
         <input type='hidden' name='pay_item_id' id='pay_item_id' value='#{self.pay_item_id}' />
@@ -94,10 +93,6 @@ module Interswitch
        </table>
       </form>
       "
-
-      # <script type='text/javascript'>
-      #   document.getElementById('webpay-payment-form').submit()
-      # </script>
     end
   end
 end

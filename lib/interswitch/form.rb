@@ -47,18 +47,29 @@ module Interswitch
       <table style='width:100%;' cellpadding='0' class='payment_table' border='0'>
 
         <tr height='30px'>
-            <td align='left' width='50%'>Transaction Date: </td>
-            <td align='left' width='50%' style='font-weight:bold'>#{format_date(self.transaction_date)} </td>
+          <td align='left' width='50%'>Transaction Date: </td>
+          <td align='left' width='50%' style='font-weight:bold'>#{format_date(self.transaction_date)} </td>
         </tr> 
         <tr height='30px'>
-            <td align='left' width='100%' class='text_black'>Transaction ID: </td>
-            <td align='left' width='50%' style='font-weight:bold'>#{self.txn_ref} </td>
-        </tr>    
+          <td align='left' width='100%' class='text_black'>Transaction ID: </td>
+          <td align='left' width='50%' style='font-weight:bold'>#{self.txn_ref} </td>
+        </tr>
+
         <tr height='30px'>
-            <td align='left' width='50%'>Payment Partner:</td>
-            <td align='left' width='50%' style='font-weight:bold'>
-            <img src='#{self.interswitch_logo}' width='200' height='50' alt='payment partner' />
-            </td>
+          <td align='left' width='100%' class='text_black'>Customer Number: </td>
+          <td align='left' width='50%' style='font-weight:bold'>#{self.cust_id} </td>
+        </tr>
+
+        <tr height='30px'>
+          <td align='left' width='100%' class='text_black'>Customer Name: </td>
+          <td align='left' width='50%' style='font-weight:bold'>#{self.cust_name} </td>
+        </tr>
+
+        <tr height='30px'>
+          <td align='left' width='50%'>Payment Partner:</td>
+          <td align='left' width='50%' style='font-weight:bold'>
+          <img src='#{self.interswitch_logo}' width='200' height='50' alt='payment partner' />
+          </td>
         </tr>        
         <tr height='30px'>
           <td align='left' width='50%'>Customer Subscription:</td>

@@ -1,3 +1,6 @@
+require 'active_support'
+require 'active_support/core_ext'
+
 module Interswitch
   class Form
     include Interswitch::Helpers
@@ -78,7 +81,7 @@ module Interswitch
         
         <tr height='30px'>
           <td align='left' width='50%'>Total amount:&nbsp;
-          <td align='left' width='50%' style='font-weight:bold'> &#8358;#{self.amount_kobo/100}</td>
+          <td align='left' width='50%' style='font-weight:bold'> &#8358;#{ ( self.amount_kobo/100 ).to_s(:currency, unit: '') }</td>
         </tr>
 
         <input name='utf8' type='hidden' value='&#x2713;' />

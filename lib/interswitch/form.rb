@@ -35,13 +35,10 @@ module Interswitch
     #   options: (Hash)
     def initialize(args)
       # # ensure args is hash and required values are supplied
-      @testurl = 'https://sandbox.interswitchng.com/webpay/pay'
-      @liveurl = 'https://webpay.interswitchng.com/paydirect/pay'
       args.each do |k,v|
         instance_variable_set("@#{k}", v) unless v.nil?
       end
-      
-      @url = args[:test_mode] ? @testurl : @liveurl
+      @url = Interswitch.configuration.url
       @hash = generate_hash(txn_ref: self.txn_ref, product_id: self.product_id, pay_item_id: self.pay_item_id, amount_kobo: self.amount_kobo, site_redirect_url: self.site_redirect_url, mackey: self.mackey)
     end
 

@@ -5,6 +5,5 @@ module Interswitch
     initializer 'interswitch.initialize' do |app|
       # # put required logic here!!! 
     end
-
   end
 end
